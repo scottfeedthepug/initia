@@ -1,0 +1,856 @@
+:root {
+    --primary-color-1: #7BCF6B;
+    --primary-color-2: #E9A20A;
+    --primary-color-3: #4E6CFF;
+    --primary-color-4: #CB15B3;
+    --primary-color-5: #FFDE24;
+    --black: #333333;
+    --white: #FEFEFE;
+    --gray: #999999;
+    --darkgray: #B7B7B7;
+    --lightgray: #dededecc;
+    --font-family-EN: "Poppins", sans-serif;
+    --font-family-TC: "Noto Sans TC", sans-serif;
+
+}
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #DFDFDF;
+    padding: 360px 40px;
+}
+
+.leftPart {
+    display: flex;
+    gap: 32px;
+    width: 100%;
+
+}
+
+.nav {
+    position: fixed;
+    display: flex;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    background-color: var(--white);
+    z-index: 999;
+    box-shadow: 0px 6px 25px -8px rgba(0, 0, 0, 0.171);
+    align-items: center;
+    padding: 0 120px;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    color: var(--darkgray);
+    font-family: var(--font-family-EN);
+    width: 60%;
+    height: 40px;
+    padding: 0 32px;
+    border-radius: 8px;
+    background-color: var(--lightgray);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25) inset;
+    cursor: pointer;
+}
+
+.searchBar i{
+    height: 12px;
+}
+
+.Profile{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: var(--primary-color-4);
+    cursor: pointer;
+}
+
+.grid-container {
+    display: grid;
+    gap: 32px;
+    height: fit-content;
+    align-items: start;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding-top: 64px;
+    padding-bottom: 240px;
+}
+
+.QuestionnaireCard {
+    background-color: var(--white);
+    border-color: var(--primary-color-1);
+    border-style: solid;
+    border-top-width: 5px;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    align-content: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    /* overflow: clip; */
+    padding: 16px;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0px 6px 25px -8px rgba(0, 0, 0, 0.5);
+    width: 280px;
+    height: fit-content;
+    min-width: 135px;
+    /* Adjust width as needed */
+}
+
+.HelpCard {
+    background-color: var(--white);
+    border-color: var(--primary-color-3);
+    border-style: solid;
+    border-top-width: 5px;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    align-content: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    /* overflow: clip; */
+    padding: 16px;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0px 6px 25px -8px rgba(0, 0, 0, 0.5);
+    width: 280px;
+    height: fit-content;
+    min-width: 135px;
+    /* Adjust width as needed */
+}
+
+.RecruitCard {
+    background-color: var(--white);
+    border-color: var(--primary-color-2);
+    border-style: solid;
+    border-top-width: 5px;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    align-content: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    /* overflow: clip; */
+    padding: 16px;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0px 6px 25px -8px rgba(0, 0, 0, 0.5);
+    width: 280px;
+    height: fit-content;
+    min-width: 135px;
+    /* Adjust width as needed */
+}
+
+.OthersCard {
+    background-color: var(--white);
+    border-color: var(--primary-color-4);
+    border-style: solid;
+    border-top-width: 5px;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    align-content: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    /* overflow: clip; */
+    padding: 16px;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0px 6px 25px -8px rgba(0, 0, 0, 0.5);
+    width: 280px;
+    min-width: 135px;
+    /* Adjust width as needed */
+}
+
+.SystemCard {
+    background-color: var(--white);
+    border-color: var(--primary-color-3);
+    border-style: solid;
+    border-top-width: 5px;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    align-content: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    /* overflow: clip; */
+    padding: 16px;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0px 6px 25px -8px rgba(0, 0, 0, 0.5);
+    width: 280px;
+    min-width: 135px;
+    /* Adjust width as needed */
+}
+
+.content {
+    align-content: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    position: relative;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.QuestionnaireCard .dl {
+    border-bottom: 0.5px solid var(--primary-color-1);
+    align-content: stretch;
+    display: flex;
+    height: 24px;
+    align-items: center;
+    overflow: clip;
+    /* padding-right: 10px; */
+    padding-top: 8px;
+    position: relative;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.HelpCard .dl {
+    border-bottom: 0.5px solid var(--primary-color-3);
+    align-content: stretch;
+    display: flex;
+    height: 24px;
+    align-items: center;
+    overflow: clip;
+    /* padding-right: 10px; */
+    padding-top: 8px;
+    position: relative;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.RecruitCard .dl {
+    border-bottom: 0.5px solid var(--primary-color-2);
+    align-content: stretch;
+    display: flex;
+    height: 24px;
+    align-items: center;
+    overflow: clip;
+    /* padding-right: 10px; */
+    padding-top: 8px;
+    position: relative;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.OthersCard .dl {
+    border-bottom: 0.5px solid var(--primary-color-4);
+    align-content: stretch;
+    display: flex;
+    height: 24px;
+    align-items: center;
+    overflow: clip;
+    padding-right: 10px;
+    padding-top: 8px;
+    position: relative;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.SystemCard .dl {
+    border-bottom: 0.5px solid var(--primary-color-3);
+    align-content: stretch;
+    display: flex;
+    height: 24px;
+    align-items: center;
+    overflow: clip;
+    padding-right: 10px;
+    padding-top: 8px;
+    position: relative;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+
+.QuestionnaireCard .dl p {
+    font-family: var(--font-family-TC);
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+    flex-shrink: 0;
+    color: var(--primary-color-1);
+    font-size: 14px;
+    margin: 0;
+}
+
+.HelpCard .dl p {
+    font-family: var(--font-family-TC);
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+    flex-shrink: 0;
+    color: var(--primary-color-3);
+    font-size: 14px;
+    margin: 0;
+}
+
+.RecruitCard .dl p {
+    font-family: var(--font-family-TC);
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+    flex-shrink: 0;
+    color: var(--primary-color-2);
+    font-size: 14px;
+    margin: 0;
+}
+
+.OthersCard .dl p {
+    font-family: var(--font-family-TC);
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+    flex-shrink: 0;
+    color: var(--primary-color-4);
+    font-size: 14px;
+    margin: 0;
+}
+
+.SystemCard .dl p {
+    font-family: var(--font-family-TC);
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+    flex-shrink: 0;
+    color: var(--primary-color-5);
+    font-size: 14px;
+    margin: 0;
+}
+
+.HelpCard .dl p {
+    font-family: var(--font-family-TC);
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+    flex-shrink: 0;
+    color: var(--primary-color-3);
+    font-size: 14px;
+    margin: 0;
+}
+
+.top {
+    align-content: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    position: relative;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family-TC);
+    justify-content: center;
+    line-height: 0;
+    position: relative;
+    flex-shrink: 0;
+    color: var(--black);
+    font-size: 18px;
+    width: 100%;
+    font-weight: 700;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.recruitType {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color-2);
+    color: var(--white);
+    font-size: 14px;
+    font-family: var(--font-family-TC);
+    padding: 4px 8px;
+    border-radius: 40px;
+    width: 44px;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--gray);
+}
+
+.title p {
+    line-height: normal;
+    white-space: pre-wrap;
+    margin: 0;
+}
+
+.top-middle {
+    align-content: stretch;
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    position: relative;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.progress-bar {
+    align-content: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: flex-start;
+    position: relative;
+    flex-shrink: 0;
+    width: 6px;
+}
+
+.bar-container {
+    display: flex;
+    height: 130px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-shrink: 0;
+    width: 6px;
+}
+
+.bar {
+    flex: none;
+    background-color: var(--lightgray);
+    align-content: stretch;
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: relative;
+    width: 6px;
+}
+
+.progress-color {
+    background-color: var(--primary-color-1);
+    height: 108px;
+    width: 6px;
+}
+
+.progress-text {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Source Code Pro', sans-serif;
+    font-weight: 400;
+    justify-content: center;
+    line-height: 0;
+    position: relative;
+    flex-shrink: 0;
+    font-size: 12px;
+    color: #666666cc;
+    white-space: nowrap;
+}
+
+.progress-text p {
+    line-height: normal;
+    margin: 0;
+}
+
+.ta {
+    align-content: stretch;
+    display: flex;
+    flex: 1 0 0;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    min-height: 1px;
+    min-width: 1px;
+    position: relative;
+}
+
+.QuestionnaireCard .ta ul {
+    display: block;
+    font-family: 'Poppins', 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    line-height: 0;
+    position: relative;
+    flex-shrink: 0;
+    color: var(--primary-color-1);
+    font-size: 14px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.HelpCard .ta ul {
+    display: block;
+    font-family: 'Poppins', 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    line-height: 0;
+    position: relative;
+    flex-shrink: 0;
+    color: var(--primary-color-3);
+    font-size: 14px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.RecruitCard .ta ul {
+    display: block;
+    font-family: 'Poppins', 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    line-height: 0;
+    position: relative;
+    flex-shrink: 0;
+    color: var(--primary-color-2);
+    font-size: 14px;
+    width: 100%;
+    margin: 0;
+    margin-top: 8px;
+    padding: 0;
+}
+
+.ta li {
+    list-style-type: disc;
+    margin-left: 21px;
+}
+
+.QuestionnaireCard .ta-desc {
+    align-content: stretch;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    position: relative;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.HelpCard .ta-desc {
+    align-content: stretch;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.RecruitCard .ta-desc {
+    align-content: stretch;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    position: relative;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.QuestionnaireCard .ta-desc p {
+    font-family: var(--font-family-EN);
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    flex-shrink: 0;
+    color: #999;
+    font-size: 14px;
+    width: 100%;
+    white-space: pre-wrap;
+    margin-top: 8px;
+}
+
+.HelpCard .ta-desc p {
+    font-family: var(--font-family-EN);
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    flex-shrink: 0;
+    color: #999;
+    font-size: 14px;
+    width: 100%;
+    white-space: pre-wrap;
+    margin: 0;
+    display: -webkit-box;
+    /* 必須設定為 box 模型 */
+    -webkit-box-orient: vertical;
+    /* 設定垂直排列 */
+    -webkit-line-clamp: 5;
+    /* 設定你想顯示的行數（例如 3 行） */
+    overflow: hidden;
+}
+
+.RecruitCard .ta-desc p {
+    font-family: var(--font-family-EN);
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    flex-shrink: 0;
+    color: #999;
+    font-size: 14px;
+    width: 100%;
+    white-space: pre-wrap;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+
+
+.pic {
+    aspect-ratio: 1 / 1;
+    position: relative;
+    flex-shrink: 0;
+    width: 100%;
+    /* display: none; */
+}
+
+.pic img {
+    position: absolute;
+    max-width: none;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.QuestionnaireCard .bottom {
+    align-content: stretch;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.HelpCard .bottom {
+    align-content: stretch;
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.RecruitCard .bottom {
+    align-content: stretch;
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.QuestionnaireCard .bottom p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: normal;
+    font-style: normal;
+    position: relative;
+    flex-shrink: 0;
+    color: var(--primary-color-1);
+    font-size: 14px;
+    margin: 0;
+}
+
+.HelpCard .bottom p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: normal;
+    font-style: normal;
+    position: relative;
+    flex-shrink: 0;
+    color: var(--primary-color-3);
+    font-size: 14px;
+    margin: 0;
+    display: block;
+}
+
+.RecruitCard .bottom p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: normal;
+    font-style: normal;
+    position: relative;
+    flex-shrink: 0;
+    color: var(--primary-color-2);
+    font-size: 14px;
+    margin: 0;
+    display: block;
+}
+
+.RecruitCard .bottom span {
+    font-weight: normal;
+    color: var(--gray);
+}
+
+.goToQ {
+    position: absolute;
+    background-color: #2B9417;
+    bottom: -2px;
+    align-content: stretch;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    right: -8px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.25);
+    width: 24px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.goToH {
+    position: absolute;
+    background-color: #283C9F;
+    bottom: -2px;
+    align-content: stretch;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    right: -8px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.25);
+    width: 24px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.goToR {
+    position: absolute;
+    background-color: #986801;
+    bottom: -2px;
+    align-content: stretch;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    right: -8px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.25);
+    width: 24px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.QuestionnaireCard:hover .goToQ {
+    display: flex;
+}
+
+.HelpCard:hover .goToH {
+    display: flex;
+}
+
+.RecruitCard:hover .goToR {
+    display: flex;
+}
+
+.arrow-forward {
+    overflow: clip;
+    position: relative;
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+}
+
+.arrow-forward img {
+    display: block;
+    max-width: none;
+    width: 100%;
+    height: 100%;
+}
+
+.favTag {
+    position: absolute;
+    align-content: stretch;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 16px;
+    top: 0;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.subtract {
+    height: 27px;
+    position: relative;
+    flex-shrink: 0;
+    width: 16px;
+}
+
+.subtract img {
+    display: block;
+    max-width: none;
+    width: 100%;
+    height: 100%;
+}
+
+.more {
+    position: absolute;
+    right: -24px;
+    bottom: 12px;
+    width: 24px;
+    height: 32px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #99999900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.more i {
+    color: var(--black);
+}
+
+.QuestionnaireCard:hover .more {
+    background-color: var(--darkgray);
+}
+
+.HelpCard:hover .more {
+    background-color: var(--darkgray);
+}
+
+.RecruitCard:hover .more {
+    background-color: var(--darkgray);
+}
+
+.OthersCard:hover .more {
+    background-color: var(--darkgray);
+}
